@@ -10,7 +10,6 @@
 
 <a name="create-sshkey"></a>
 # Tạo SSH-Key
-### Windows
 ### Linux
 Để tạo ssh-key trên linux ta sử dụng lệnh
 ```
@@ -47,6 +46,9 @@ The key's randomart image is:
 [toor@CentOS-7 ~]$
 ```
 
+### Windows
+Đối với windows ta có thể tạo ssh-key bằng một số phần mềm như Putty, MobaXterm hoặc có thể cài git và sử dụng git-bash
+
 <a name="ssh-copy-id"></a>
 # Copy ssh-key
 Sau khi tạo xong ssh-key ta cần thực hiện copy public key vào máy chủ để có thể tiến hành xác thực bằng ssh-key thay vì mật khẩu
@@ -57,4 +59,8 @@ Sau khi tạo xong ssh-key ta cần thực hiện copy public key vào máy ch�
 ssh-copy-id -i /home/toor/.ssh/id_rsa.pub root@192.168.235.128
 ```
 
-Sau khi thực hiện lệnh 
+Sau khi thực hiện lệnh ta sẽ phải xác thực mật khẩu và public key sẽ được copy tới máy chủ đích, sau đó ta có thể thực hiện ssh vào máy chủ bằng xác thực khóa thay vì mật khẩu
+
+Kết quả:
+```
+```
