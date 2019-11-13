@@ -15,7 +15,7 @@ Một số lệnh đặc biệt:
 |`cd -`|Trở về thư mục trước đó|
 
 
-# List file and directory
+### List file and directory
 Để liệt kê các file và thư mục\
 Cú pháp: `ls [options] [path]`
 
