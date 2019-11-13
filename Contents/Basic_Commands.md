@@ -6,6 +6,7 @@
 Cú pháp `cd [path]`
 
 Một số lệnh đặc biệt:\
+
 |Commands|Note|
 |--------|----|
 |`cd`|Trở về thư mục home|
