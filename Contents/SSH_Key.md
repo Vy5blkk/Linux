@@ -22,7 +22,7 @@ Ta sẽ có một mô hình lab gồm 2 máy Centos như hình sau:
 <img src="https://github.com/Vy5blkk/Linux/blob/master/Images/SSH-KEY.png">
 
 
-Và ta sẽ thực hiện triển khai để máy `CentOS_1` có thể kết nối ssh tới máy `CentOS_2`
+Và ta sẽ thực hiện triển khai để máy `centos-7_1` có thể kết nối ssh tới máy `centos-7_2`
 
 
 
@@ -32,17 +32,33 @@ Và ta sẽ thực hiện triển khai để máy `CentOS_1` có thể kết n�
 
 <a name="create-sshkey"></a>
 # Tạo SSH-Key
-Đầu tiên ta truy cập vào máy `CentOS_1` và tạo cặp khóa trên máy này bằng lệnh sau:
+Đầu tiên ta truy cập vào máy `centos-7_1` và tạo cặp khóa trên máy này bằng lệnh sau:
 ```
 ssh-keygen -t rsa -b 4096
 ```
 Trong đó:  
-- `-t` chỉ định loại mã hóa được sử dụng, ở đây là rsa  
-- `-b` chỉ định độ dài khóa  
-Sau khi thực hiện lệnh sẽ tạo ra 1 cặp khóa, 1 public key và 1 private key ở thư mục `~\.ssh\` nêu không được chỉ định đường dẫn
+- `-t` chỉ định loại mã hóa được sử dụng, ở đây là rsa, bạn cũng có thể chỉ định một loại mã hóa khác được hỗ trợ  
+- `-b` chỉ định độ dài khóa, nếu ta không có tùy chọn này khóa được tạo ra mặc định sẽ là 1024 bit
+
+
+Sau khi thực hiện lệnh bạn sẽ được hỏi một số tùy chọn cho việc tạo cặp khóa như sau:
+```
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/toor/.ssh/id_rsa):
+```
+Cho phép chúng ta thay đổi nơi lưu trữ cặp khóa và tên file, nếu ta không chỉ định cặp khóa sẽ được lưu tại thư mục `.ssh` tại thư mục của người dùng hiện tại
+
+
+Tiếp theo một tùy chọn cho phép chúng ta đặt mật khẩu bảo vệ cho cặp khóa này nhằm bảo vệ khi có ai đó có được private key thì cũng không thể đọc được nội dung của khóa, để bỏ qua ta ấn `Enter`:
 
 ```
-[toor@CentOS-7 ~]$ ssh-keygen -t rsa -b 4096
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+```
+
+Kết quả sẽ như sau:
+```
+[root@CentOS-7_1 ~]$ ssh-keygen -t rsa -b 4096
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/toor/.ssh/id_rsa):
 Created directory '/home/toor/.ssh'.
@@ -64,11 +80,13 @@ The key's randomart image is:
 |    +  . ++*.+E  |
 |     +===+= .    |
 +----[SHA256]-----+
-[toor@CentOS-7 ~]$
+[root@CentOS-7_1 ~]$
 ```
 
-### Windows
-Đối với windows ta có thể tạo ssh-key bằng một số phần mềm như Putty, MobaXterm hoặc có thể cài git và sử dụng git-bash
+Sau đó một cặp khóa sẽ được tạo ra tại thư mục được chỉ định ở trên hoặc mặc định là thư mục `.ssh` ở thư mục người dùng hiện tại
+
+<!-- ### Windows
+Đối với windows ta có thể tạo ssh-key bằng một số phần mềm như Putty, MobaXterm hoặc có thể cài git và sử dụng git-bash -->
 
 <a name="ssh-copy-id"></a>
 # Copy ssh-key
