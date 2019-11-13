@@ -73,4 +73,6 @@ Now try logging into the machine, with:   "ssh 'toor@192.168.235.128'"
 and check to make sure that only the key(s) you wanted were added.
 ```
 
+Sau khi thực hiện một file `authorized_keys` sẽ được tạo ra trong thư mục `.ssh` trên máy chủ, đó chính là public key mà ta vừa thực hiện copy
+
 Cuối cùng ta chỉ cần ssh vào máy chủ và việc xác thực sẽ được thực hiện bằng khóa ssh.
