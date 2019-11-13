@@ -13,8 +13,9 @@ SSH-Key là một phương thức xác thực khi ta sử dụng giao thức SSH
 
 <a name="mohinhlab"></a>
 # Mô hình lab
-Ta sẽ có một mô hình lab gồm 2 máy Centos như hình sau:
-<img src="https://github.com/Vy5blkk/Linux/blob/master/Images/sshkey_lab.png">
+
+Ta sẽ có một mô hình lab gồm 2 máy Centos như hình sau:  
+<img src="https://github.com/Vy5blkk/Linux/blob/master/Images/sshkey_lab.png">  
 Và ta sẽ thực hiện triển khai để máy `CentOS_1` có thể kết nối ssh tới máy `CentOS_2`
 
 
