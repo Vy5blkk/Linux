@@ -86,6 +86,7 @@ Các quyền được thể hiện như sau:
 - **=**: Gán quyền được chỉ định cho file hoặc thư mục
 
 **Ví dụ** Với `file.txt`:
+
 Để thêm quyền thực thi cho chủ sở hữu vơi file `file.txt`:
 `# chmod u+x file.txt`
 
