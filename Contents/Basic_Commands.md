@@ -13,3 +13,15 @@ Một số lệnh đặc biệt:
 |`cd /`|Trở về thư mục gốc (`/`)|
 |`cd ..`|Trở về thư mục cha|
 |`cd -`|Trở về thư mục trước đó|
+
+
+# List file and directory
+Để liệt kê các file và thư mục\
+Cú pháp: `ls [options] [path]`
+
+Các option:
+
+|Options|Note|
+|--------|----|
+|-l|Liệt kê hiển thị theo danh sách|
+|-a|Liệt kê tất cả các file và thư mục ẩn|
