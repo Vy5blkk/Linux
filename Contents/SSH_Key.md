@@ -16,10 +16,11 @@
 ```
 ssh-keygen -t rsa -b 4096
 ```
-với:\
-`-t` chỉ định loại mã hóa được sử dụng, ở đây là rsa
-`-b` chỉ định độ dài khóa
+với:  
+`-t` chỉ định loại mã hóa được sử dụng, ở đây là rsa  
+`-b` chỉ định độ dài khóa  
 
+sau khi thực hiện lệnh sẽ
 
 <a name="ssh-copy-id"></a>
 # Copy ssh-key
