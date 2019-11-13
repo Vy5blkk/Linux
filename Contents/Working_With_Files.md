@@ -96,4 +96,9 @@ Các quyền được thể hiện như sau:
 Để gán cho các người dùng thuộc group quyền đọc và ghi mà không có thực thi:
 `# chmod g=rw file.txt`
 
-### Chế độ 
+### Chế độ tuyệt đối
+Ngoài ra ta có thể thay đổi quyền của file và thư mục ở chế độ tuyệt đối, ở chế độ này mỗi quyền được gán một giá trị số, bảng sau đây mô ta các quyền tương ứng với cá giá trị:
+
+|Number|Permissions|Descriptions|
+|------|-----------|-|
+0|---|Không có quyền gì|
