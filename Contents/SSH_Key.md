@@ -95,20 +95,22 @@ Sau khi tạo xong ssh-key ta cần thực hiện copy public key vào máy ch�
 Để copy ssh-key ta thực hiện lệnh sau và thay đường dẫn thư mục người dùng tên người dùng và ip máy chủ hợp lệ:
 
 ```
-ssh-copy-id -i /home/toor/.ssh/id_rsa.pub root@192.168.235.128
+ssh-copy-id -i /home/root/.ssh/id_rsa.pub root@192.168.235.130
 ```
 
-Sau khi thực hiện lệnh ta sẽ phải xác thực mật khẩu và public key sẽ được copy tới máy chủ đích, sau đó ta có thể thực hiện ssh vào máy chủ bằng xác thực khóa thay vì mật khẩu
+Sau khi thực hiện lệnh một lời nhắc nhập mật khẩu, ta cần nhập mật khẩu của máy `centos-7_1` để hoàn tất quá trình copy ssh-key
 
-Kết quả:
+Kết quả sẽ như sau:
 ```
-# ssh-copy-id -i /home/toor/.ssh/id_rsa.pub root@192.168.235.128
+[root@CentOS-7_1 ~]$ ssh-copy-id -i /home/root/.ssh/id_rsa.pub root@192.168.235.130
 /bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-...
+[root@CentOS-7_1 ~]$ password:
+
+
 Number of key(s) added: 1
 
-Now try logging into the machine, with:   "ssh 'toor@192.168.235.128'"
+Now try logging into the machine, with:   "ssh 'root@192.168.235.130'"
 and check to make sure that only the key(s) you wanted were added.
 ```
 
