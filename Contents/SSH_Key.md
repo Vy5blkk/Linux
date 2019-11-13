@@ -63,4 +63,12 @@ Sau khi thực hiện lệnh ta sẽ phải xác thực mật khẩu và public 
 
 Kết quả:
 ```
+# ssh-copy-id -i /home/toor/.ssh/id_rsa.pub root@192.168.235.128
+/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+...
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'toor@192.168.235.128'"
+and check to make sure that only the key(s) you wanted were added.
 ```
