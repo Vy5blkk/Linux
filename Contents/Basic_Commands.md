@@ -25,3 +25,16 @@ Các option:
 |--------|----|
 |-l|Liệt kê hiển thị theo danh sách|
 |-a|Liệt kê tất cả các file và thư mục ẩn|
+
+
+### System Shutdown
+
+|Commands|Descriptions|
+|--------|------------|
+|halt|Dừng CPU|
+|init 0|Tắt máy an toàn, dọn dẹp hệ thống trước khi tắt|
+|init 6|Khởi động lại|
+|poweroff|Tắt máy|
+|reboot|Khởi động lại|
+|shutdown|Tắt máy|
+
