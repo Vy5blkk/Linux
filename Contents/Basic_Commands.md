@@ -13,5 +13,3 @@ Một số lệnh đặc biệt:\
 |`cd /`|Trở về thư mục gốc (`/`)|
 |`cd ..`|Trở về thư mục cha|
 |`cd -`|Trở về thư mục trước đó|
-|`cd`|Trở về thư mục home|
-|`cd`|Trở về thư mục home|
