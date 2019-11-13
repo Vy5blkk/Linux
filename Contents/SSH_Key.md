@@ -1,14 +1,16 @@
 # SSH-Key
 
 1.[Giới Thiệu](#gioithieu)  
-2.[Mô hình lab](#mohinhlab)
+2.[Mô hình lab](#mohinhlab)  
+3.[Ip-planning](#ip-planning)  
+4.[Tạo SSH-Key](#create-sshkey)  
+5.[Copy SSH-Key](#copy-sshkey)  
 
-2.[Tạo SSH-Key](#create-sshkey)  
-3.[Copy SSH-Key](#copy-sshkey)  
 
 <a name="gioithieu"></a>
 # Giới Thiệu
 SSH-Key là một phương thức xác thực khi ta sử dụng giao thức SSH để truy cập từ xa vào một máy chủ, thay vì sử dụng mật khẩu để xác thực ở đây ta sẽ tạo ra 1 cặp khóa 1 public key và 1 private key, 2 khóa này có sự liên kết với nhau giúp ta có thể xác thực khi ssh vào máy chủ mà không cần đến mật khẩu. 
+
 
 
 <a name="mohinhlab"></a>
@@ -23,20 +25,20 @@ Ta sẽ có một mô hình lab gồm 2 máy Centos như hình sau:
 Và ta sẽ thực hiện triển khai để máy `CentOS_1` có thể kết nối ssh tới máy `CentOS_2`
 
 
+
 <a name="ip-planning"></a>
 # Ip-planning
 <img src="https://github.com/Vy5blkk/Linux/blob/master/Images/ip-planning.png">
 
 <a name="create-sshkey"></a>
 # Tạo SSH-Key
-### Linux
-Để tạo ssh-key trên linux ta sử dụng lệnh
+Đầu tiên ta truy cập vào máy `CentOS_1` và tạo cặp khóa trên máy này bằng lệnh sau:
 ```
 ssh-keygen -t rsa -b 4096
 ```
-với:  
-`-t` chỉ định loại mã hóa được sử dụng, ở đây là rsa  
-`-b` chỉ định độ dài khóa  
+Trong đó:  
+- `-t` chỉ định loại mã hóa được sử dụng, ở đây là rsa  
+- `-b` chỉ định độ dài khóa  
 Sau khi thực hiện lệnh sẽ tạo ra 1 cặp khóa, 1 public key và 1 private key ở thư mục `~\.ssh\` nêu không được chỉ định đường dẫn
 
 ```
