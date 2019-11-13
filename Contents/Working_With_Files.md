@@ -44,3 +44,12 @@ Trong đó:
 - Cột thư sau thể hiện thời gian tạo hoặc cập nhật lần cuối
 - Cột cuối cùng là tên của file hoặc thư mục
 
+## Quyền truy cập file và thư mục
+
+Trong linux quyền được chia thành 3 nhóm khác nhau:
+
+|#|Description|
+|-|-----------|
+|owners|Chủ sở hữu, là người sở hữu tệp|
+|group|Là nhóm sở hữu|
+|Others|Là những nhóm người dùng khác|
