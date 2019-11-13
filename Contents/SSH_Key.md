@@ -40,7 +40,7 @@ Trong đó:
 - `-t` chỉ định loại mã hóa được sử dụng, ở đây là rsa, bạn cũng có thể chỉ định một loại mã hóa khác được hỗ trợ  
 - `-b` chỉ định độ dài khóa, nếu ta không có tùy chọn này khóa được tạo ra mặc định sẽ là 1024 bit
 
-
+Bạn có thể tham khảo thêm về lệnh `ssh-keygen` [Ở đây](https://www.ssh.com/ssh/keygen/)  
 Sau khi thực hiện lệnh bạn sẽ được hỏi một số tùy chọn cho việc tạo cặp khóa như sau:
 ```
 Generating public/private rsa key pair.
@@ -97,6 +97,7 @@ Sau khi tạo xong ssh-key ta cần thực hiện copy public key vào máy ch�
 ```
 ssh-copy-id -i /home/root/.ssh/id_rsa.pub root@192.168.235.130
 ```
+Bạn có thể tham khảo thêm về lệnh `ssh-copy-id` [Ở đây](https://www.ssh.com/ssh/copy-id)  
 
 Sau khi thực hiện lệnh một lời nhắc nhập mật khẩu, ta cần nhập mật khẩu của máy `centos-7_1` để hoàn tất quá trình copy ssh-key
 
