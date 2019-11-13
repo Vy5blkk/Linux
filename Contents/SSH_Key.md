@@ -72,3 +72,5 @@ Number of key(s) added: 1
 Now try logging into the machine, with:   "ssh 'toor@192.168.235.128'"
 and check to make sure that only the key(s) you wanted were added.
 ```
+
+Cuối cùng ta chỉ cần ssh vào máy chủ và việc xác thực sẽ được thực hiện bằng khóa ssh.
