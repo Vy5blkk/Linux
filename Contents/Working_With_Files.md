@@ -50,6 +50,27 @@ Trong linux quyền được chia thành 3 nhóm khác nhau:
 
 |#|Description|
 |-|-----------|
-|owners|Chủ sở hữu, là người sở hữu tệp|
-|group|Là nhóm sở hữu|
-|Others|Là những nhóm người dùng khác|
+|owner|Chủ sở hữu, xác định những hành động mà chủ sở hữu có thể thực hiện với tệp|
+|group|Nhóm, xác định những hành động mà các thành viên trong nhóm có thể thực hiện với tệp|
+|Other|Xác định những hành động mà tất cả các người dùng khác có thể thực hiện với tệp|
+
+Khi liệt kê các tệp ta được kết quả tương được như sau:
+
+```
+drwxr-xr-x.  6 root root     4096 Nov 11 22:08 sysconfig
+-rw-r--r--.  1 root root      449 Apr 11  2018 sysctl.conf
+drwxr-xr-x.  2 root root       28 Nov 11 22:01 sysctl.d
+drwxr-xr-x.  4 root root      151 Nov 11 22:01 systemd
+```
+
+Trong đó (Ở cột đầu tiên):
+- Ký tự thư nhất cho biết đó là file hay thư mục
+- Ký tự từ thứ 2-4 thể hiện quyền của chủ sở hữu
+- Ký tự từ thư 5-7 thể hiện quyền của nhóm
+- Ký tự từ thứ 8-10 thể hiện quyền của các người dùng khác
+
+Các quyền được thể hiện như sau:
+- `r` thể hiện có quyền đọc
+- `w` thể hiện có quyền ghi hay sử đổi tệp
+- `x` thể hiện có quyền thực thi
+- `-` không có quyền
