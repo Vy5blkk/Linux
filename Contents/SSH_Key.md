@@ -12,7 +12,14 @@
 # Tạo SSH-Key
 ### Windows
 ### Linux
-Để tạo ssh-key trên linux 
+Để tạo ssh-key trên linux ta sử dụng lệnh
+```
+ssh-keygen -t rsa -b 4096
+```
+với:\
+`-t` chỉ định loại mã hóa được sử dụng, ở đây là rsa
+`-b` chỉ định độ dài khóa
+
 
 <a name="ssh-copy-id"></a>
 # Copy ssh-key
