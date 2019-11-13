@@ -100,5 +100,16 @@ Các quyền được thể hiện như sau:
 Ngoài ra ta có thể thay đổi quyền của file và thư mục ở chế độ tuyệt đối, ở chế độ này mỗi quyền được gán một giá trị số, bảng sau đây mô ta các quyền tương ứng với cá giá trị:
 
 |Number|Permissions|Descriptions|
-|------|-----------|-|
+|------|-----------|------------|
 0|---|Không có quyền gì|
+1|--x|Quyền thực thi|
+2|-w-|Quyền ghi|
+3|-wx|2(w) + 1(x) = 3: Quyền ghi và thực thi|
+4|r---|Quyền đọc|
+5|r-x|4(r) + 1(x) = 5: Quyền đọc và thực thi|
+6|rw-|4(r) + 2(w) = 6: Quyền đọc và ghi|
+7|rwx|4(r) + 2(w) + 1(x) = 6: Full quyền|
+
+**Ví dụ** với file `file.txt`:
+
+Để thêm quyền
