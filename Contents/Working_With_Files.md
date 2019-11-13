@@ -51,8 +51,8 @@ Trong linux quyền được chia thành 3 nhóm khác nhau:
 
 |#|Description|
 |-|-----------|
-|owner|Chủ sở hữu, xác định những hành động mà chủ sở hữu có thể thực hiện với tệp|
-|group|Nhóm, xác định những hành động mà các thành viên trong nhóm có thể thực hiện với tệp|
+|Owner|Chủ sở hữu, xác định những hành động mà chủ sở hữu có thể thực hiện với tệp|
+|Group|Nhóm, xác định những hành động mà các thành viên trong nhóm có thể thực hiện với tệp|
 |Other|Xác định những hành động mà tất cả các người dùng khác có thể thực hiện với tệp|
 
 Khi liệt kê các tệp ta được kết quả tương được như sau:
@@ -75,3 +75,24 @@ Các quyền được thể hiện như sau:
 - `w` thể hiện có quyền ghi hay sử đổi tệp
 - `x` thể hiện có quyền thực thi
 - `-` không có quyền
+
+## Thay đổi quyền
+Để thay đổi quyền ta sử dụng lệnh `chmod`, `chmod` ta có thể sử dụng ở 2 chế độ:
+
+#### Chế độ tượng trưng
+Ở chế độ này có 3 toán tử sử dụng để chỉnh sửa  quyền:
+- **+**: Thêm quyền được chỉ định cho file hoặc thư mục
+- **-**: Loại bỏ quyền được chỉ định cho file hoặc thư mục
+- **=**: Gán quyền được chỉ định cho file hoặc thư mục
+
+**Ví dụ** Với `file.txt`:
+Để thêm quyền thực thi cho chủ sở hữu vơi file `file.txt`:
+`# chmod u+x file.txt`
+
+Để loại bỏ quyền ghi của các người dùng khác:
+`# chmod o-w file.txt`
+
+Để gán cho các người dùng thuộc group quyền đọc và ghi mà không có thực thi:
+`# chmod g=rw file.txt`
+
+### Chế độ 
