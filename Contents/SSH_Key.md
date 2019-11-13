@@ -114,6 +114,6 @@ Now try logging into the machine, with:   "ssh 'root@192.168.235.130'"
 and check to make sure that only the key(s) you wanted were added.
 ```
 
-Sau khi thực hiện một file `authorized_keys` sẽ được tạo ra trong thư mục `.ssh` trên máy chủ, đó chính là public key mà ta vừa thực hiện copy
+Sau khi thực hiện một file `authorized_keys` sẽ được tạo ra trong thư mục `.ssh` trên máy `centos-7_2`, đó chính là public key mà ta vừa thực hiện copy
 
-Cuối cùng ta chỉ cần ssh vào máy chủ và việc xác thực sẽ được thực hiện bằng khóa ssh.
+Cuối cùng ta chỉ cần ssh vào máy chủ và việc xác thực sẽ được thực hiện bằng khóa ssh thay vì mật khẩu.
