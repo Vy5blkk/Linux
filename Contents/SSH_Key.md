@@ -6,7 +6,7 @@
 
 <a name="gioithieu"></a>
 # Giới Thiệu
-
+SSH-Key là một phương thức xác thực khi ta sử dụng giao thức SSH để truy cập từ xa vào một máy chủ, thay vì sử dụng mật khẩu để xác thực ở đây ta sẽ tạo ra 1 cặp khóa 1 public key và 1 private key, 2 khóa này có sự liên kết với nhau giúp ta có thể xác thực khi ssh vào máy chủ mà không cần đến mật khẩu. 
 
 <a name="create-sshkey"></a>
 # Tạo SSH-Key
