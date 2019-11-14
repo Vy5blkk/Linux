@@ -37,4 +37,5 @@ Là một nơi khác để gắn kết thiết bị như địa CDs, DVDs, USB, 
 ## (/mnt) Mount Directory
 Là một thư mục dùng để gắn kết các thiết bị tạm thời khác
 
-## ()
+## (/opt) Optional directory
+Đây là nơi chứa các gói phần phền tùy chọn, nghĩa là các phần mềm chưa được quản lý bới trình quản lý gói.
