@@ -57,3 +57,6 @@ Chứa các file và tiện ích được chia sẻ với các người dùng
 
 ## (/var) Variable directory
 Đây là nơi chứa các file có dung lượng thay đổi trong thời gian chạy, ví dụ như `/var/log/`, `/var/spool`, .v.v. ngoài ra còn có thể chứa các dữ liệu khác, như thư mục máy chủ web `/var/www/`.
+
+## (/run) Run directory
+Đây là thư mục chứa dữ liệu thời gian chạy (runtime data), có được chuyển từ `/dev/.udev/` sang `/run` mới đây.
