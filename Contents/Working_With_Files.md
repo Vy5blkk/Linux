@@ -126,4 +126,10 @@ Ta có thể thay `<user>` bằng id của người dùng thay vì tên người
 
 
 ## Thay đổi nhóm sở hữu
-Để thay đổi nhóm sở hữu ta sử dụng lệnh `chgrp`
+Để thay đổi nhóm sở hữu ta sử dụng lệnh `chgrp`.
+
+Cú pháp: `chgrp <group> <file or directory>`
+
+**Ví dụ:**
+
+`chgrp apache file.txt` Để thay đổi nhóm sở hữu của `file.txt` thành nhóm `apache`.
