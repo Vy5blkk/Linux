@@ -113,3 +113,17 @@ Ngoài ra ta có thể thay đổi quyền của file và thư mục ở chế �
 **Ví dụ** với file `file.txt`:
 
 Để chủ sở hữu có full quyền, group có quyền đọc và ghi còn các người dùng khác không có quyền: `chmod 760 file.txt`
+
+## Thay đổi chủ sở hữu
+Để thay đổi người sở hữu ta sử dụng lệnh `chown`, đối với người dùng `root` có thể thay đổi tất cả quyền sở hữu của file và thư mục, ngoài ra đối với các người dùng khác chỉ có thể thay đổi quyên sở hữu của file hoặc thư mục mà họ sở hữu.
+
+Cú pháp: `chown <user> <file or directory>`
+
+Ta có thể thay `<user>` bằng id của người dùng thay vì tên người dùng.
+
+**Ví dụ:**
+`# chown www-data file.txt` Sẽ thay đổi chủ sở hữu của `file.txt` thành `www-data` (Người dùng apache)
+
+
+## Thay đổi nhóm sở hữu
+Để thay đổi nhóm sở hữu ta sử dụng lệnh `chgrp`
