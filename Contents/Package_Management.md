@@ -20,6 +20,7 @@ Các trình quản lý gói được chia làm 2 loại:
 ## Trình quản lý gói cấp cao
 
 |RPM|Debian|Note|
+|---|------|----|
 |yum install foo|apt-get install foo|Cài đặt package|
 |yum remove foo|apt-get remove foo|Gỡ cài đặt package|
 |yum update foo|apt-get upgrade foo|Cập nhật package|
