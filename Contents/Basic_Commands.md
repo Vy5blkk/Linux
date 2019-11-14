@@ -38,3 +38,9 @@ Các option:
 |reboot|Khởi động lại|
 |shutdown|Tắt máy|
 
+### Xác định vị trí ứng dụng hoặc tiện ích
+Lệnh `which` giúp xác định vị trí của chương trình hoặc tiện ích trong hệ thống
+
+Cú pháp: `which <name>`
+
+Ngoài ra ta có thể sử dụng lệnh `whereis` để xác định, lệnh này sẽ tìm kiếm xâu hơn trong hệ thống để xác định vị trí
