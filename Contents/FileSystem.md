@@ -54,6 +54,7 @@ Là một thư mục tạm thời, bạn có thể lưu trữ tạm thời ở �
 
 ## (/usr) Usr director
 Chứa các file và tiện ích được chia sẻ với các người dùng
+`bin`, `sbin`, `lib` bản chất cũng nằm trong `/usr/` và được link đến thư mục gốc `/`.
 
 ## (/var) Variable directory
 Đây là nơi chứa các file có dung lượng thay đổi trong thời gian chạy, ví dụ như `/var/log/`, `/var/spool`, .v.v. ngoài ra còn có thể chứa các dữ liệu khác, như thư mục máy chủ web `/var/www/`.
