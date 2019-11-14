@@ -4,4 +4,4 @@ Linux sử dụng hệ thống tệp phân cấp dưới dạng cây (tree) vớ
 
 Dưới đây là cấu trúc file hệ thống trong linux:
 
-<img src="./Images/Linux-File-System.png">
+<img src="../Images/Linux-File-System.png">
