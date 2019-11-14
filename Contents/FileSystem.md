@@ -9,12 +9,22 @@ Dưới đây là cấu trúc file hệ thống trong linux:
 ## (/) Root directory
 Đây là thư mục gốc của hệ thống, là điểm khởi đầu của toàn bộ hệ thống tệp hay nói cách khác đây là thư mục chứa toàn bộ hệ điều hành của bạn.
 
-## (bin) binary directory
+## (/bin) binary directory
 Đây là thư lục chứa các file thực thi, thường chứa các lệnh terminal, các tiện ích cốt lõi của hệ thông, ví vụ như: `cd` (change directory), `pwd` (print working directory ), `mv` (move) .v.v.
 
-## (boot) boot directory
+## (/boot) boot directory
 Đây là thư mục chứa các file khởi động của hệ thống, với một hệ thông thường sẽ có 4 file:
 - `vmlinuz` or `vmlinuz*` là kernel được nén
 - `initramfs` là `???` is the initial ram filesystem, required for booting
 - `config` là file cấu hình kernel, chỉ sử dụng dể debug
 - `system.map` `???` contains the kernel symbol table, only used for debugging
+
+## (/dev) device directory
+Đây là nơi gắn kết các thiết bị, ví dụ như: USB, Ổ đĩa quang, v.v.v
+
+## (/etc) config directory
+Đây là thư mục chứa các cấu hình của hệ thống, những file cấu hình ở đây sẽ ảnh hưởng đến toàn bộ người dùng trong hệ thống, ngoài ra người dùng có thể lưu các cấu hình riêng ở thư mục home của người dùng để chỉ ảnh hưởng đến người dùng đó.
+
+## (/home) home directory
+Mỗi người dùng trên hệ thống đều có một thư mục riêng của mình và nó nằm ở trong thư mục `/home` thư mục này chứa toàn bộ các thư mục Desktop, Documents, Downloads, Photos và Videos, thư mục này thường có tên trùng với tên người dùng và mõi khi người dùng đăng nhập vào hệ thống thì mặc định sẽ được trỏ đến thư mục này.
+
