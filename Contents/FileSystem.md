@@ -11,3 +11,10 @@ Dưới đây là cấu trúc file hệ thống trong linux:
 
 ## (bin) binary directory
 Đây là thư lục chứa các file thực thi, thường chứa các lệnh terminal, các tiện ích cốt lõi của hệ thông, ví vụ như: `cd` (change directory), `pwd` (print working directory ), `mv` (move) .v.v.
+
+## (boot) boot directory
+Đây là thư mục chứa các file khởi động của hệ thống, với một hệ thông thường sẽ có 4 file:
+- `vmlinuz` or `vmlinuz*` là kernel được nén
+- `initramfs` là `???` is the initial ram filesystem, required for booting
+- `config` là file cấu hình kernel, chỉ sử dụng dể debug
+- `system.map` `???` contains the kernel symbol table, only used for debugging
